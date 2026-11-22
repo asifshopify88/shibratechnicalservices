@@ -113,7 +113,7 @@
       </div>
     </div>
     <div class="contact-form">
-      {% form 'contact', id: 'quote-form' %}
+      {% form 'contact' %}
         {% if form.posted_successfully? %}<p role="status">Thank you. Your enquiry has been sent successfully.</p>{% endif %}
         {{ form.errors | default_errors }}
         <div class="form-row">
