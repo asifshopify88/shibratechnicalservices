@@ -1,5 +1,5 @@
 // Add Shibra's verified UAE WhatsApp number below, digits only (example: 9715XXXXXXXX).
-const WHATSAPP_NUMBER = "971500000000";
+const WHATSAPP_NUMBER = "971506757165";
 
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".menu-toggle");
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (form) {
     form.addEventListener("submit", event => {
       event.preventDefault();
-      if (WHATSAPP_NUMBER === "971500000000") {
+      if (!WHATSAPP_NUMBER) {
         alert("Please add the company's real WhatsApp number in script.js before testing the enquiry form.");
         return;
       }
